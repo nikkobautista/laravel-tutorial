@@ -1,7 +1,7 @@
 <?php
 
 class Home_Controller extends Base_Controller {
-
+    
 	/*
 	|--------------------------------------------------------------------------
 	| The Default Controller
@@ -35,4 +35,21 @@ class Home_Controller extends Base_Controller {
 		return View::make('home.index');
 	}
 
+    public function action_about()
+    {
+        return View::make('home.about', array(
+            'sidenav' => array(
+                array(
+                    'url' => '',
+                    'name' => 'Home',
+                    'active' => false
+                ),
+                array(
+                    'url' => 'about',
+                    'name' => 'About',
+                    'active' => true
+                )
+            )
+        ));
+    }
 }

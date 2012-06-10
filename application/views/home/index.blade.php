@@ -1,57 +1,51 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Laravel: A Framework For Web Artisans</title>
-	<meta name="viewport" content="width=device-width">
-	{{ HTML::style('laravel/css/style.css') }}
-</head>
-<body>
-	<div class="wrapper">
-		<header>
-			<h1>Laravel</h1>
-			<h2>A Framework For Web Artisans</h2>
+@layout('layouts/main')
 
-			<p class="intro-text" style="margin-top: 45px;">
-			</p>
-		</header>
-		<div role="main" class="main">
-			<div class="home">
-				<h2>Learn the terrain.</h3>
+@section('navigation')
+@parent
+<li><a href="about">About</a></li>
+@endsection
 
-				<p>
-					You've landed yourself on our default home page. The route that
-					is generating this page lives at:
-				</p>
+@section('content')
+<div class="hero-unit">
+    <div class="row">
+        <div class="span6">
+            <h1>Welcome to Instapics!</h1>
+            <p>Instapics is a fun way to share photos with family and friends.</p>
+            <p>Wow them with your photo-filtering abilities!</p>
+            <p>Let them see what a great photographer you are!</p>
+            <p><a href="about" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+            
+            <form class="well">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Your Email Address" name="email" id="email" />
+                <label for="password">Password</label>
+                <input type="password" placeholder="Your Password" name="password" id="password" />
+                <label class="checkbox" for="new_user">
+                    <input type="checkbox" name="new_user" id="new_user" checked="checked"> I am a new user
+                </label>
+                <br />
+                <button type="submit" class="btn btn-success">Login or Register</button>
+            </form>
+        </div>
+        
+        <div class="span4">
+            <img src="img/phones.png" alt="Instapics!" />
+        </div>
+    </div>
+    
+    
+</div>
 
-				<pre>{{ path('app') }}routes.php</pre>
-
-				<p>And the view sitting before you can be found at:</p>
-
-				<pre>{{ path('app') }}views/home/index.php</pre>
-
-				<h2>Grow in knowledge.</h2>
-
-				<p>
-					Leaning to use Laravel is amazingly simple thanks to
-					its {{ HTML::link('docs', 'wonderful documentation') }}.
-				</p>
-
-				<h2>Create something beautiful.</h2>
-
-				<p>
-					Now that you're up and running, it's time to start creating!
-					Here are some links to help you get started:
-				</p>
-
-				<ul class="out-links">
-					<li><a href="http://laravel.com">Official Website</a></li>
-					<li><a href="http://forums.laravel.com">Laravel Forums</a></li>
-					<li><a href="http://github.com/laravel/laravel">GitHub Repository</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+<!-- Example row of columns -->
+<div class="row">
+    <div class="span3">
+        &nbsp;
+    </div>
+    <div class="span4">
+        <a href="#"><img src="img/badge_ios.png" alt="Get it on iOS" /></a>
+    </div>
+    <div class="span4">
+        <a href="#"><img src="img/badge_android.png" alt="Get it on Android" /></a>
+    </div>
+</div>
+@endsection
