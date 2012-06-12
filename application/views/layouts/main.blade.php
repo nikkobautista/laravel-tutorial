@@ -11,11 +11,11 @@
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <a class="brand" href="">Instapics</a>
+                    <a class="brand" href="home">Instapics</a>
                     <div class="nav-collapse">
                         <ul class="nav">
                             @section('navigation')
-                            <li class="active"><a href="">Home</a></li>
+                            <li class="active"><a href="home">Home</a></li>
                             @yield_section
                         </ul>
                     </div><!--/.nav-collapse -->

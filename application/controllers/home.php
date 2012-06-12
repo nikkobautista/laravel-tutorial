@@ -40,7 +40,7 @@ class Home_Controller extends Base_Controller {
         return View::make('home.about', array(
             'sidenav' => array(
                 array(
-                    'url' => '',
+                    'url' => 'home',
                     'name' => 'Home',
                     'active' => false
                 ),
