@@ -15,13 +15,13 @@
             <p>Let them see what a great photographer you are!</p>
             <p><a href="about" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
             
-            <form class="well">
+            <form class="well" method="POST" action="user/authenticate">
                 <label for="email">Email</label>
                 <input type="email" placeholder="Your Email Address" name="email" id="email" />
                 <label for="password">Password</label>
                 <input type="password" placeholder="Your Password" name="password" id="password" />
                 <label class="checkbox" for="new_user">
-                    <input type="checkbox" name="new_user" id="new_user" checked="checked"> I am a new user
+                    <input type="checkbox" name="new_user" id="new_user" checked="checked" value="1"> I am a new user
                 </label>
                 <br />
                 <button type="submit" class="btn btn-success">Login or Register</button>

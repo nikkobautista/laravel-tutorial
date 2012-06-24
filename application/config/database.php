@@ -70,9 +70,9 @@ return array(
 		'mysql' => array(
 			'driver'   => 'mysql',
 			'host'     => 'localhost',
-			'database' => 'database',
+			'database' => 'instapics',
 			'username' => 'root',
-			'password' => '',
+			'password' => 'nikko1234',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 		),
