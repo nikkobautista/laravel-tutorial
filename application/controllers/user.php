@@ -15,7 +15,7 @@ class User_Controller extends Base_Controller
                 $user->save();
                 Auth::login($user);
             
-                echo "Successfully created new user and logged in!";
+                return Redirect::to('dashboard');
             }  catch( Exception $e ) {
                 echo "Faield to create new user!";
             }
@@ -25,7 +25,7 @@ class User_Controller extends Base_Controller
                 'password' => $password
             );
             if( Auth::attempt($credentials)) {
-                echo "Successfully logged in!";
+                return Redirect::to('dashboard');
             } else {
                 echo "Failed to login!";
             }
