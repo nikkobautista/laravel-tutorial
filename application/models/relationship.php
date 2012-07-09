@@ -1,6 +1,6 @@
 <?php
 
-class Relationships extends Eloquent {
+class Relationship extends Eloquent {
 
 	public static $timestamps = true;
 
