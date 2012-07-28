@@ -1,10 +1,16 @@
 <?php
 
-class Photo extends Eloquent {
+class Photo extends Eloquent
+{
+	public static $timestamps = true;
 
 	public function user()
 	{
-		return $this->has_one('User');
+		return $this->belongs_to('User');
 	}
 
+	public function photocomments()
+	{
+		return $this->has_many('PhotoComment');
+	}
 }

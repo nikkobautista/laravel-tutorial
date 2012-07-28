@@ -1,9 +1,11 @@
 <?php
-class User extends Eloquent {
-    
+class User extends Eloquent
+{
+    public static $timestamps = true;
+
     public function user_profile()
     {
-        return $this->has_one('User_Profile');
+        return $this->has_one('UserProfile');
     }
     
     public function followers()
@@ -21,8 +23,8 @@ class User extends Eloquent {
         return $this->has_many('Photo');
     }
     
-    public function photo_comment()
+    public function photocomment()
     {
-        return $this->has_many('Photo_Comment');
+        return $this->has_many('PhotoComment');
     }
 }

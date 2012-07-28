@@ -1,7 +1,7 @@
 <?php
 
-class Relationship extends Eloquent {
-
+class Relationship extends Eloquent
+{
 	public static $timestamps = true;
 
 	public function follower()
