@@ -65,7 +65,7 @@ return array(
 			'host'     => 'localhost',
 			'database' => 'instapics',
 			'username' => 'root',
-			'password' => '<yourpassword>',
+			'password' => 'nikko1234',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 		),

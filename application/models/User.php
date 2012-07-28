@@ -3,7 +3,7 @@ class User extends Eloquent
 {
     public static $timestamps = true;
 
-    public function user_profile()
+    public function userprofile()
     {
         return $this->has_one('UserProfile');
     }
