@@ -66,6 +66,6 @@ class User_Controller extends Base_Controller
     public function action_logout()
     {
         Auth::logout();
-        Redirect::to('home/index');
+        return Redirect::to('home');
     }
 }
